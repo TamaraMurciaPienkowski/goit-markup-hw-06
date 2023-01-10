@@ -799,7 +799,7 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .modal-form label {
@@ -831,8 +831,9 @@ body {
   width: 448px;
   margin-top: 4px;
   padding: 12px 16px;
+  margin-bottom: 20px;
 }
-.modal-form svg {
+.modal-form-svg {
   position: absolute;
   top: 29px;
   left: 12px;
@@ -891,34 +892,37 @@ body {
 .modal-checkbox input[type="checkbox"] {
   position: absolute;
   top: 4px;
-  left: 52px;
+  left: 4px;
   appearance: none;
   cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  border: none;
 }
 
 .checkbox-empty {
   position: absolute;
   top: 4px;
-  left: 52px;
+  left: 4px;
   cursor: pointer;
 }
 
 .checkbox-checked {
   position: absolute;
   top: 4px;
-  left: 52px;
+  left: 4px;
   cursor: pointer;
   opacity: 0;
 }
 
-.modal-checkbox input[type="checkbox"]:checked + .checkbox-checked {
+.modal-checkbox input[type="checkbox"]:checked ~ .checkbox-checked {
   opacity: 1;
 }
 
 .terms-and-conditions span {
   color: var(--description-text);
   font-size: 14px;
-  margin-left: 79px;
+  margin-left: 30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }

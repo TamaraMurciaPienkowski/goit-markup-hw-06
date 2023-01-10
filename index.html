@@ -446,21 +446,21 @@
           <label>
             Imię
             <input type="text" name="name" />
-            <svg width="18px" height="18px">
+            <svg width="18px" height="18px" class="modal-form-svg">
               <use href="./images/icons.svg#icon-mepel"></use>
             </svg>
           </label>
           <label>
             Telefon
             <input type="tel" name="phone_number" />
-            <svg width="18px" height="18px">
+            <svg width="18px" height="18px" class="modal-form-svg">
               <use href="./images/icons.svg#icon-mobilephone"></use>
             </svg>
           </label>
           <label>
             Email
             <input type="email" name="email" />
-            <svg width="18px" height="18px">
+            <svg width="18px" height="18px" class="modal-form-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
@@ -469,23 +469,23 @@
             <textarea name="feedback" rows="7" placeholder="Wprowadź tekst">
             </textarea>
           </label>
+          <div class="terms-and-conditions">
+            <label class="modal-checkbox">
+              <input type="checkbox" name="checkbox" />
+              <svg width="16px" height="15px" class="checkbox-empty">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <svg width="16px" height="15px" class="checkbox-checked">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </label>
+            <span>
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a>.
+            </span>
+          </div>
+          <button type="submit" class="button-send">Wyślij</button>
         </form>
-        <div class="terms-and-conditions">
-          <label class="modal-checkbox">
-            <input type="checkbox" name="checkbox" />
-            <svg width="16px" height="15px" class="checkbox-empty">
-              <use href="./images/icons.svg#icon-checkbox"></use>
-            </svg>
-            <svg width="16px" height="15px" class="checkbox-checked">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-          </label>
-          <span>
-            Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-            <a href="#">Politykę Prywatności</a>.
-          </span>
-        </div>
-        <button type="submit" class="button-send">Wyślij</button>
       </div>
     </div>
     <!-- end of modal and backdrop -->
